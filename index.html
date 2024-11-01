@@ -1,20 +1,673 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <!-- Link to generated Tailwind CSS file -->
-    <link href="./assets/css/output.css" rel="stylesheet">
-</head>
-<body>
-    <div class="bg-blue-500 text-white p-4">
-        <h1 class="text-3xl font-bold">Hello, World!</h1>
-        <p>This is a sample page with Tailwind CSS styling.</p>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+  </head>
+  <body class="max-w-7xl mx-auto">
+    <div class="bg-[#ff0000] w-full py-4 hidden md:block">
+      <span class="flex items-center justify-center gap-5">
+        <a href="#" class="font-[700] text-white text-sm hover:underline"
+          >Home</a
+        >
+        <a href="#" class="font-[700] text-white text-sm hover:underline">
+          Live Update
+        </a>
+        <a href="#" class="font-[700] text-white text-sm hover:underline">
+          Election 2023
+        </a>
+        <a href="#" class="font-[700] text-white text-sm hover:underline"
+          >Videos</a
+        >
+        <a href="#" class="font-[700] text-white text-sm hover:underline">
+          Return To Punch Home Page
+        </a>
+      </span>
     </div>
-    
+    <div
+      class="flex items-center md:justify-center w-full justify-between py-4 md:shadow-none bottom-shadow px-3"
+    >
+      <img
+        src="./assets/images/logo-head.png"
+        class="md:w-auto w-[80%]"
+        alt="logo-head"
+      />
+      <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer"></i>
+    </div>
+    <section class="px-3 md:px-10">
+      <!-- HERO START-->
+      <div class="w-full flex gap-5 md:p-5 py-3">
+        <div class="w-full md:w-[80%] flex flex-col md:flex-row">
+          <div class="w-full md:w-[70%]">
+            <img src="/assets/images/hero1.png" alt="hero1" class="w-full" />
+          </div>
+          <div class="w-full md:w-[30%] bg-[#E2E2E2]">
+            <div class="w-full justify-end md:flex mt-3 hidden">
+              <p
+                class="bg-[#FF0000] rounded-tl-[13px] rounded-bl-[13px] px-5 text-white py-1"
+              >
+                Interview
+              </p>
+            </div>
+            <div class="space-y-[9px] md:mx-4 p-3">
+              <h2 class="text-[25px] font-[700] leading-[34px] text-[#4A4A4A]">
+                Benue supplementary polls: Ortom leads in 9 of 13 LGAs
+              </h2>
+              <p class="text-[17px] leading-[23px] text-[#4A4A4A] font-[400]">
+                Lorem ipsum dolor sit amet, conse adipiscing elit. Habitasse
+                massa pretium elementum
+              </p>
+              <p
+                class="text-xs text-[#4A4A4A] font-[400] w-full flex justify-end md:justify-start"
+              >
+                10 seconds ago
+              </p>
+              <button
+                class="bg-[#4A4A4A] px-7 py-2 rounded-[8px] text-white text-sm md:block hidden"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-auto hidden md:block">
+          <img src="assets/images/twitter-feed.png" alt="hero1" />
+        </div>
+      </div>
+      <!-- HERO END -->
+
+      <div class="bg-[#f5f5f5] rounded-[21px] py-4 px-10 space-y-2">
+        <h1 class="font-[700] text-[25px] text-[#4A4A4A] leading-[34px]">
+          Presidential Candidates
+        </h1>
+        <div class="flex gap-1">
+          <img src="/assets/images/presidential1.png" alt="" />
+          <div
+            style="background-color: rgba(196, 196, 196, 0.36)"
+            class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px]"
+          >
+            <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+            <p class="text-sm font-semibold text-[#868686]">67% Probability</p>
+          </div>
+          <img src="/assets/images/presidential2.png" alt="" />
+
+          <img src="/assets/images/presidential3.png" alt="" />
+
+          <img src="/assets/images/presidential4.png" alt="" />
+          <img src="/assets/images/presidential2.png" alt="" />
+
+          <img src="/assets/images/presidential3.png" alt="" />
+        </div>
+      </div>
+
+      <div class="w-full flex gap-5 py-5">
+        <div class="w-full md:w-[80%]">
+          <div>
+            <div class="flex items-center gap-2 w-full">
+              <span class="rounded-none p-2 bg-[#FF0000]"></span>
+              <h2 class="font-[700] text-[25px] text-[#4A4A4A] leading-[34px]">
+                Voter Education
+              </h2>
+              <hr class="border border-[#C5C5C5] flex-grow" />
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row items-center gap-5 w-full my-4"
+            >
+              <div class="w-full md:w-[80%] flex md:flex-col flex-row gap-3">
+                <div class="w-full">
+                  <img
+                    src="/assets/images/voterEducation.png"
+                    alt="hero1"
+                    class="w-full"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="md:space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum
+                    </p>
+                    <p
+                      class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                    >
+                      February 19, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full md:w-[80%] flex md:flex-col flex-row gap-3">
+                <div class="w-full">
+                  <img
+                    src="/assets/images/voterEducation.png"
+                    alt="hero1"
+                    class="w-full"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="md:space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum
+                    </p>
+                    <p
+                      class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                    >
+                      February 19, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full md:w-[80%] flex md:flex-col flex-row gap-3">
+                <div class="w-full">
+                  <img
+                    src="/assets/images/voterEducation.png"
+                    alt="hero1"
+                    class="w-full"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="md:space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum
+                    </p>
+                    <p
+                      class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                    >
+                      February 19, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- video posts -->
+          <div class="">
+            <div class="flex items-center gap-2 w-full">
+              <span class="rounded-none p-2 bg-[#FF0000]"></span>
+              <h2 class="font-[700] text-[25px] text-[#4A4A4A] leading-[34px]">
+                Video Posts
+              </h2>
+              <hr class="border border-[#C5C5C5] flex-grow" />
+            </div>
+
+            <div class="flex gap-5 my-4">
+              <div class="w-full md:flex md:flex-col flex-row gap-3 hidden">
+                <div class="w-full">
+                  <img
+                    src="/assets/images/videoMain.png"
+                    alt="hero1"
+                    class="w-full"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="md:space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum
+                    </p>
+                    <p
+                      class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                    >
+                      February 19, 2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="w-full flex gap-3">
+                  <div class="">
+                    <img
+                      src="/assets/images/video-2.png"
+                      alt="hero1"
+                      class="w-[103px] h-[92px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <div class="space-y-2">
+                      <h2
+                        class="md:hidden text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                      >
+                        Lorem ipsum dolor
+                      </h2>
+                      <p
+                        class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full"
+                      >
+                        Lorem ipsum dolor sit amet, conse adipiscing elit.
+                        Habitasse massa pretium elementum
+                      </p>
+                      <div
+                        class="flex items-center justify-between w-full cursor-pointer"
+                      >
+                        <p
+                          class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                        >
+                          February 19, 2022
+                        </p>
+
+                        <p
+                          style="background-color: rgba(255, 0, 0, 0.08)"
+                          class="text-red-500 md:hidden p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                        >
+                          257 <i class="fa-solid fa-message"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-3">
+                  <div class="">
+                    <img
+                      src="/assets/images/video-2.png"
+                      alt="hero1"
+                      class="w-[103px] h-[92px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <div class="space-y-2">
+                      <h2
+                        class="md:hidden text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                      >
+                        Lorem ipsum dolor
+                      </h2>
+                      <p
+                        class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full"
+                      >
+                        Lorem ipsum dolor sit amet, conse adipiscing elit.
+                        Habitasse massa pretium elementum
+                      </p>
+                      <div
+                        class="flex items-center justify-between w-full cursor-pointer"
+                      >
+                        <p
+                          class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                        >
+                          February 19, 2022
+                        </p>
+
+                        <p
+                          style="background-color: rgba(255, 0, 0, 0.08)"
+                          class="text-red-500 md:hidden p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                        >
+                          257 <i class="fa-solid fa-message"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-3">
+                  <div class="">
+                    <img
+                      src="/assets/images/video-2.png"
+                      alt="hero1"
+                      class="w-[103px] h-[92px]"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <div class="space-y-2">
+                      <h2
+                        class="md:hidden text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                      >
+                        Lorem ipsum dolor
+                      </h2>
+                      <p
+                        class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full"
+                      >
+                        Lorem ipsum dolor sit amet, conse adipiscing elit.
+                        Habitasse massa pretium elementum
+                      </p>
+                      <div
+                        class="flex items-center justify-between w-full cursor-pointer"
+                      >
+                        <p
+                          class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                        >
+                          February 19, 2022
+                        </p>
+
+                        <p
+                          style="background-color: rgba(255, 0, 0, 0.08)"
+                          class="md:hidden text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                        >
+                          257 <i class="fa-solid fa-message"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="flex items-center gap-2 w-full">
+              <span class="rounded-none p-2 bg-[#FF0000]"></span>
+              <h2 class="font-[700] text-[25px] text-[#4A4A4A] leading-[34px]">
+                Election Stories
+              </h2>
+              <hr class="border border-[#C5C5C5] flex-grow" />
+            </div>
+
+            <div class="flex flex-col gap-3 my-4">
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
+
+
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
+
+
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
+
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>                <hr class="border border-[#C5C5C5] flex-grow my-2" />
+
+
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
+
+            </div>
+          </div>
+        </div>
+        <div class="md:flex flex-col space-y-6 hidden">
+          <div
+            class="bg-white shadow-sm shadow-gray-300 space-y-3 flex flex-col items-center p-5"
+          >
+            <h2 class="font-[900] text-[4F4F4F] text-xl">Weekly Newsletter</h2>
+            <p class="text-center font-[400] text-[4F4F4F] text-sm">
+              Subscribe to stay up-to-date on all the latest news
+            </p>
+            <input
+              class="rounded-none border-2 border-[#BDBDBD] w-full p-3"
+              name="email"
+              type="email"
+              placeholder="Email"
+            />
+            <button
+              class="bg-[#ff0000] px-7 py-2 font-[500] text-[15px] rounded-[13px] text-white"
+            >
+              Sign up
+            </button>
+          </div>
+          <div class="">
+            <img src="assets/images/cta.png" alt="hero1" class="w-full" />
+          </div>
+        </div>
+      </div>
+
+      <div class="overflow-auto md:hidden">
+        <img src="assets/images/twitter-feed.png" alt="hero1" class="w-full" />
+      </div>
+
+      <div
+        class="bg-white shadow-md md:shadow-sm shadow-gray-300 space-y-3 flex flex-col items-center p-5 my-3 md:hidden"
+      >
+        <h2 class="font-[900] text-[4F4F4F] text-xl">Weekly Newsletter</h2>
+        <p class="text-center font-[400] text-[4F4F4F] text-sm">
+          Subscribe to stay up-to-date on all the latest news
+        </p>
+        <input
+          class="rounded-none border-2 border-[#BDBDBD] w-full p-3"
+          name="email"
+          type="email"
+          placeholder="Email"
+        />
+        <button
+          class="bg-[#ff0000] px-7 py-2 font-[500] text-[15px] rounded-[13px] text-white"
+        >
+          Sign up
+        </button>
+      </div>
+    </section>
     <!-- Link to your custom JavaScript file -->
     <script src="./script.js" type="module"></script>
-</body>
+  </body>
 </html>
