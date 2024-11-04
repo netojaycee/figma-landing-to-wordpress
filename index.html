@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Figma to Worpress Landing Page</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <!-- Link to generated Tailwind CSS file -->
-    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link href="/css/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
   </head>
   <body class="max-w-7xl mx-auto">
-    <div class="bg-[#ff0000] w-full py-4 hidden md:block">
+    <div class="bg-[#FF0000] w-full py-4 hidden md:block">
       <span class="flex items-center justify-center gap-5">
         <a href="#" class="font-[700] text-white text-sm hover:underline"
           >Home</a
@@ -39,71 +53,232 @@
         class="md:w-auto w-[80%]"
         alt="logo-head"
       />
-      <i class="fa-solid fa-bars md:hidden text-xl cursor-pointer"></i>
+      <i
+        id="hamburger"
+        class="fa-solid fa-bars md:hidden text-xl cursor-pointer"
+      ></i>
     </div>
+
+    <!-- Sidebar for Mobile -->
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 w-64 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-700 ease-in-out"
+    >
+      <div class="flex justify-end p-4">
+        <i
+          id="closeSidebar"
+          class="fa-solid fa-times text-xl cursor-pointer"
+        ></i>
+      </div>
+      <nav class="flex flex-col items-start space-y-4 px-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Live Update</a>
+        <a href="#" class="hover:underline">Election 2023</a>
+        <a href="#" class="hover:underline">Videos</a>
+        <a href="#" class="hover:underline">Return To Punch Home Page</a>
+      </nav>
+    </div>
+
     <section class="px-3 md:px-10">
       <!-- HERO START-->
-      <div class="w-full flex gap-5 md:p-5 py-3">
-        <div class="w-full md:w-[80%] flex flex-col md:flex-row">
-          <div class="w-full md:w-[70%]">
-            <img src="/assets/images/hero1.png" alt="hero1" class="w-full" />
-          </div>
-          <div class="w-full md:w-[30%] bg-[#E2E2E2]">
-            <div class="w-full justify-end md:flex mt-3 hidden">
-              <p
-                class="bg-[#FF0000] rounded-tl-[13px] rounded-bl-[13px] px-5 text-white py-1"
-              >
-                Interview
-              </p>
+      <div class="w-full flex gap-10 md:p-5 py-3">
+        <div class="carousel w-full md:w-[80%]">
+          <div class="carousel-item w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-[70%]">
+              <img src="/assets/images/hero1.png" alt="hero1" class="w-full" />
             </div>
-            <div class="space-y-[9px] md:mx-4 p-3">
-              <h2 class="text-[25px] font-[700] leading-[34px] text-[#4A4A4A]">
-                Benue supplementary polls: Ortom leads in 9 of 13 LGAs
-              </h2>
-              <p class="text-[17px] leading-[23px] text-[#4A4A4A] font-[400]">
-                Lorem ipsum dolor sit amet, conse adipiscing elit. Habitasse
-                massa pretium elementum
-              </p>
-              <p
-                class="text-xs text-[#4A4A4A] font-[400] w-full flex justify-end md:justify-start"
-              >
-                10 seconds ago
-              </p>
-              <button
-                class="bg-[#4A4A4A] px-7 py-2 rounded-[8px] text-white text-sm md:block hidden"
-              >
-                Read More
-              </button>
+            <div class="w-full md:w-[30%] bg-[#E2E2E2]">
+              <div class="w-full justify-end md:flex mt-3 hidden">
+                <p
+                  class="bg-[#FF0000] rounded-tl-[13px] rounded-bl-[13px] px-5 text-white py-1"
+                >
+                  Interview
+                </p>
+              </div>
+              <div class="space-y-[9px] md:mx-4 p-3">
+                <h2
+                  class="text-[25px] font-[700] leading-[34px] text-[#4A4A4A]"
+                >
+                  Benue supplementary polls: Ortom leads in 9 of 13 LGAs
+                </h2>
+                <p class="text-[17px] leading-[23px] text-[#4A4A4A] font-[400]">
+                  Lorem ipsum dolor sit amet, conse adipiscing elit. Habitasse
+                  massa pretium elementum
+                </p>
+                <p
+                  class="text-xs text-[#4A4A4A] font-[400] w-full flex justify-end md:justify-start"
+                >
+                  10 seconds ago
+                </p>
+                <button
+                  class="bg-[#4A4A4A] px-7 py-2 rounded-[8px] text-white text-sm md:block hidden"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-[70%]">
+              <img src="/assets/images/hero1.png" alt="hero1" class="w-full" />
+            </div>
+            <div class="w-full md:w-[30%] bg-[#E2E2E2]">
+              <div class="w-full justify-end md:flex mt-3 hidden">
+                <p
+                  class="bg-[#FF0000] rounded-tl-[13px] rounded-bl-[13px] px-5 text-white py-1"
+                >
+                  Interview
+                </p>
+              </div>
+              <div class="space-y-[9px] md:mx-4 p-3">
+                <h2
+                  class="text-[25px] font-[700] leading-[34px] text-[#4A4A4A]"
+                >
+                  Benue supplementary polls: Ortom leads in 9 of 13 LGAs
+                </h2>
+                <p class="text-[17px] leading-[23px] text-[#4A4A4A] font-[400]">
+                  Lorem ipsum dolor sit amet, conse adipiscing elit. Habitasse
+                  massa pretium elementum
+                </p>
+                <p
+                  class="text-xs text-[#4A4A4A] font-[400] w-full flex justify-end md:justify-start"
+                >
+                  10 seconds ago
+                </p>
+                <button
+                  class="bg-[#4A4A4A] px-7 py-2 rounded-[8px] text-white text-sm md:block hidden"
+                >
+                  Read More
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="overflow-auto hidden md:block">
           <img src="assets/images/twitter-feed.png" alt="hero1" />
         </div>
       </div>
       <!-- HERO END -->
 
-      <div class="bg-[#f5f5f5] rounded-[21px] py-4 px-10 space-y-2">
-        <h1 class="font-[700] text-[25px] text-[#4A4A4A] leading-[34px]">
+      <div class="bg-[#f5f5f5] rounded-[21px] py-4 px-[50px] space-y-4">
+        <h1 class="font-[700] md:text-[25px] text-[#4A4A4A] leading-[34px]">
           Presidential Candidates
         </h1>
-        <div class="flex gap-1">
-          <img src="/assets/images/presidential1.png" alt="" />
-          <div
-            style="background-color: rgba(196, 196, 196, 0.36)"
-            class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px]"
-          >
-            <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
-            <p class="text-sm font-semibold text-[#868686]">67% Probability</p>
+        <div class="flex gap-4">
+          <div class="flex gap-1 cursor-pointer">
+            <img
+              src="/assets/images/presidential1.png"
+              alt=""
+              data-id="1"
+              class="candidate-img"
+            />
+            <div
+              id="card-1"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
           </div>
-          <img src="/assets/images/presidential2.png" alt="" />
+          <div class="flex gap-1 cursor-pointer carousel-item">
+            <img
+              src="/assets/images/presidential2.png"
+              alt=""
+              data-id="2"
+              class="candidate-img"
+            />
+            <div
+              id="card-2"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
+          </div>
 
-          <img src="/assets/images/presidential3.png" alt="" />
+          <div class="flex gap-1 cursor-pointer carousel-item">
+            <img
+              src="/assets/images/presidential3.png"
+              alt=""
+              data-id="3"
+              class="candidate-img"
+            />
+            <div
+              id="card-3"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
+          </div>
 
-          <img src="/assets/images/presidential4.png" alt="" />
-          <img src="/assets/images/presidential2.png" alt="" />
+          <div class="flex gap-1 cursor-pointer carousel-item">
+            <img
+              src="/assets/images/presidential4.png"
+              alt=""
+              data-id="4"
+              class="candidate-img"
+            />
+            <div
+              id="card-4"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
+          </div>
 
-          <img src="/assets/images/presidential3.png" alt="" />
+          <div class="flex gap-1 cursor-pointer carousel-item">
+            <img
+              src="/assets/images/presidential2.png"
+              alt=""
+              data-id="5"
+              class="candidate-img"
+            />
+            <div
+              id="card-5"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-1 cursor-pointer carousel-item">
+            <img
+              src="/assets/images/presidential4.png"
+              alt=""
+              data-id="6"
+              class="candidate-img"
+            />
+            <div
+              id="card-6"
+              style="background-color: rgba(196, 196, 196, 0.36)"
+              class="rounded-tr-[13px] rounded-br-[13px] p-4 w-[140px] probability-card"
+            >
+              <h2 class="text-lg font-bold">Muhammadu Buhari</h2>
+              <p class="text-sm font-semibold text-[#868686]">
+                67% Probability
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -119,16 +294,17 @@
             </div>
 
             <div
-              class="flex flex-col md:flex-row items-center gap-5 w-full my-4"
+              class="flex flex-col md:flex-row gap-5 w-full my-4"
             >
               <div class="w-full md:w-[80%] flex md:flex-col flex-row gap-3">
-                <div class="w-full">
+                <div class="w-[268px] min-h-10 bg-gray-800 overflow-hidden">
                   <img
-                    src="/assets/images/voterEducation.png"
-                    alt="hero1"
-                    class="w-full"
+                      src="/assets/image/presidential1.png"
+                      alt="hero1"
+                      class="object-cover w-full h-full"
                   />
-                </div>
+              </div>
+              
                 <div class="w-full">
                   <div class="md:space-y-2">
                     <h2
@@ -137,10 +313,18 @@
                       Lorem ipsum dolor
                     </h2>
                     <p
-                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
+                    class="overflow-hidden text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
                     >
-                      Lorem ipsum dolor sit amet, conse adipiscing elit.
-                      Habitasse massa pretium elementum
+                    Lorem ipsum dolor sit amet, conse adipiscing elit.
+                    Habitasse massa pretium elementum
+                      <!-- The Edo State Police Command has said the dismissal of
+                      Inspector Edith Uduma for exposing Sgt. Abraham (who has
+                      also been dismissed) is on order. The Police Public
+                      Relations Office, Moses Yamu, on Sunday night, said in a
+                      statement that the female police officer took advantage of
+                      the situation to try to extort money from Abraham while
+                      co-opting her husband, Inspector Ibrahim Mohammed, in the
+                      scheme. -->
                     </p>
                     <p
                       class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
@@ -169,8 +353,8 @@
                     <p
                       class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400]"
                     >
-                      Lorem ipsum dolor sit amet, conse adipiscing elit.
-                      Habitasse massa pretium elementum
+                    Lorem ipsum dolor sit amet, conse adipiscing elit.
+                    Habitasse massa pretium elementum
                     </p>
                     <p
                       class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
@@ -432,55 +616,8 @@
                     </div>
                   </div>
                 </div>
-
               </div>
               <hr class="border border-[#C5C5C5] flex-grow my-2" />
-
-
-              <div class="w-full flex gap-3">
-                <div class="">
-                  <img
-                    src="/assets/images/presidential2.png"
-                    alt="hero1"
-                    class="w-[139px] h-[121px]"
-                  />
-                </div>
-                <div class="w-full">
-                  <div class="space-y-2">
-                    <h2
-                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
-                    >
-                      Lorem ipsum dolor
-                    </h2>
-                    <p
-                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
-                    >
-                      Lorem ipsum dolor sit amet, conse adipiscing elit.
-                      Habitasse massa pretium elementum Lorem ipsum dolor sit
-                      amet, conse adipiscing elit. Habitasse massa pretium
-                      elementum
-                    </p>
-                    <div
-                      class="flex items-center justify-between w-full cursor-pointer"
-                    >
-                      <p
-                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
-                      >
-                        February 19, 2022
-                      </p>
-
-                      <p
-                        style="background-color: rgba(255, 0, 0, 0.08)"
-                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
-                      >
-                        257 <i class="fa-solid fa-message"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr class="border border-[#C5C5C5] flex-grow my-2" />
-
 
               <div class="w-full flex gap-3">
                 <div class="">
@@ -567,8 +704,8 @@
                     </div>
                   </div>
                 </div>
-              </div>                <hr class="border border-[#C5C5C5] flex-grow my-2" />
-
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
 
               <div class="w-full flex gap-3">
                 <div class="">
@@ -614,6 +751,49 @@
               </div>
               <hr class="border border-[#C5C5C5] flex-grow my-2" />
 
+              <div class="w-full flex gap-3">
+                <div class="">
+                  <img
+                    src="/assets/images/presidential2.png"
+                    alt="hero1"
+                    class="w-[139px] h-[121px]"
+                  />
+                </div>
+                <div class="w-full">
+                  <div class="space-y-2">
+                    <h2
+                      class="text-[15px] font-[700] leading-[20px] md:text-[20px] md:font-[800] md:leading-[27px] text-[#4F4F4F]"
+                    >
+                      Lorem ipsum dolor
+                    </h2>
+                    <p
+                      class="text-[13px] md:text-[17px] leading:[17px] md:leading-[23px] text-[#4A4A4A] font-[400] w-full line-clamp-2"
+                    >
+                      Lorem ipsum dolor sit amet, conse adipiscing elit.
+                      Habitasse massa pretium elementum Lorem ipsum dolor sit
+                      amet, conse adipiscing elit. Habitasse massa pretium
+                      elementum
+                    </p>
+                    <div
+                      class="flex items-center justify-between w-full cursor-pointer"
+                    >
+                      <p
+                        class="text-xs text-[#C5C5C5] font-[400] w-full flex justify-start"
+                      >
+                        February 19, 2022
+                      </p>
+
+                      <p
+                        style="background-color: rgba(255, 0, 0, 0.08)"
+                        class="text-red-500 p-2 rounded-full text-[10px] font-[400] leading-[10px] flex items-center gap-1"
+                      >
+                        257 <i class="fa-solid fa-message"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-[#C5C5C5] flex-grow my-2" />
             </div>
           </div>
         </div>
@@ -668,6 +848,9 @@
       </div>
     </section>
     <!-- Link to your custom JavaScript file -->
-    <script src="./script.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script src="./assets/js/script.js" type="module"></script>
   </body>
 </html>
